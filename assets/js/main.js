@@ -55,6 +55,44 @@
 			]
 		});
 
+		$('.cottage-gallery-img').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+		});
+		$('.cottage-gallery-nav').slick({
+			asNavFor: '.cottage-gallery-img',
+			infinite: true,
+			centerMode: true,
+			centerPadding: '20px',
+			focusOnSelect: true,
+			slidesToShow: 3,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						centerPadding: '120px',
+					}
+				},
+				{
+					breakpoint: 1024,
+					settings: {
+						centerPadding: '40px',
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						centerPadding: '5px',
+					}
+				}
+			]
+		});
+
 		var	$window = $(window),
 			$body = $('body'),
 			$header = $('#header'),
@@ -111,27 +149,6 @@
 					$('#navButton, #navPanel, #page-wrapper')
 						.css('transition', 'none');
 
-		// Header.
-		// If the header is using "alt" styling and #banner is present, use scrollwatch
-		// to revert it back to normal styling once the user scrolls past the banner.
-		// Note: This is disabled on mobile devices.
-			// if (!skel.vars.mobile
-			// &&	$header.hasClass('alt')
-			// &&	$banner.length > 0) {
-
-			// 	$window.on('load', function() {
-
-			// 		$banner.scrollwatch({
-			// 			delay:		0,
-			// 			range:		0.5,
-			// 			anchor:		'top',
-			// 			on:			function() { $header.addClass('alt reveal'); },
-			// 			off:		function() { $header.removeClass('alt'); }
-			// 		});
-
-			// 	});
-
-			// }
 
 	});
 

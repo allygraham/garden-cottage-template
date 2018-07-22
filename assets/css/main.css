@@ -3845,15 +3845,21 @@
 	}
 }
 
-.gallery-img img {
+.gallery-img img,
+.cottage-gallery-img img {
 	width: 100%;
 }
 
-.gallery-nav img {
+.gallery-nav img,
+.cottage-gallery-nav img {
 	max-width: 250px;
 }
 
 #header h1 img {
 	width: 125px;
 	margin-top: 50px;
+}
+
+.pswp--open {
+	z-index: 150000 !important;
 }
