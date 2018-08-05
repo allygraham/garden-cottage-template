@@ -5457,7 +5457,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 			}
 
 		.gallery.style2 > .backward {
-			left: 0;
+			left: 3.75em;
 			background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25) 15%, rgba(0, 0, 0, 0));
 		}
 
