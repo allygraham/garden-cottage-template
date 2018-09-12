@@ -2879,6 +2879,10 @@
 						color: #646464;
 					}
 
+					#header.alt--home {
+						background-color: #e0ebe0 !important;
+					}
+
 					#header.alt--home nav > ul > li a:not(.button) {
 						color: #646464;
 					}
@@ -3063,13 +3067,13 @@
 		background-attachment: fixed;
 		background-color: #666;
 		background-image: url("../images/banner.jpg");
-		background-position: center 0;
+		background-position: 0 -50px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
-		min-height: 80vh;
+		min-height: 100vh;
 	}
 
 		#banner :last-child {
@@ -3157,7 +3161,7 @@
 			}
 
 	body.landing #main {
-		margin-top: -14em;
+		margin-top: 0;
 	}
 
 /* Footer */
@@ -3865,6 +3869,11 @@
 #header h1 img {
 	width: 125px;
 	margin-top: 50px;
+}
+
+#header h1.h1--home img {
+	width: auto;
+	margin-top: 0;
 }
 
 .pswp--open {

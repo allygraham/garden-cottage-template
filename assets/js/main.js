@@ -27,7 +27,6 @@
 			asNavFor: '.gallery-img',
 			infinite: true,
 			centerMode: true,
-			centerPadding: '20px',
 			focusOnSelect: true,
 			slidesToShow: 3,
 			adaptiveHeight: true,
@@ -37,13 +36,11 @@
 				{
 					breakpoint: 1200,
 					settings: {
-						centerPadding: '120px',
 					}
 				},
 				{
 					breakpoint: 1024,
 					settings: {
-						centerPadding: '40px',
 					}
 				},
 				{
