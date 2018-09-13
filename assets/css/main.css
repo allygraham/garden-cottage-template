@@ -6001,6 +6001,19 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		color :#669966 !important;
 	}
 
+	.timeline-panel img {
+		float: right;
+	}
+
+	.timeline-panel .stars {
+		margin-bottom: 2.5em;
+	}
+
+	.timeline-panel .stars img {
+		float: left;
+		height: 20px;
+	}
+
 	@media screen and (min-width: 841px) {
 		.timeline:before,
 		.timeline > li > .timeline-badge {
