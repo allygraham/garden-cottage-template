@@ -1842,7 +1842,7 @@
 		}
 
 	h2 {
-		font-size: 2.25em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 		letter-spacing: -0.035em;
 	}
@@ -2422,9 +2422,9 @@
 		padding-left: 1em;
 	}
 
-		ul li {
+		/* ul li {
 			padding-left: 0.5em;
-		}
+		} */
 
 		ul.alt {
 			list-style: none;
@@ -2889,7 +2889,7 @@
 
 					#header nav > ul > li a:not(.button):hover {
 						background:rgba(102, 153, 102, 0.25) !important;
-						border-radius: 0;
+						border-radius: 3px;
 					}
 
 						#header nav > ul > li a:not(.button).icon:before {
@@ -2998,7 +2998,7 @@
 				#header.alt nav > ul > li a.active {
 					background-color: #669966 !important;
 					color: #FFF;
-					border-radius: 0;
+					border-radius: 3px;
 				}
 
 	.dropotron {
@@ -3067,7 +3067,7 @@
 		background-attachment: fixed;
 		background-color: #666;
 		background-image: url("../images/banner.jpg");
-		background-position: 0 -50px;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: #fff;
@@ -3870,13 +3870,14 @@
 }
 
 #header h1 img {
-	width: 125px;
+	width: 125px !important;
 	margin-top: 50px;
 }
 
-#header h1.h1--home img {
-	width: auto;
-	margin-top: 0;
+#header h1.h1--home {
+	background-color: #FFF;
+	padding: 20px 20px 30px 20px;
+	border-radius: 0 0 6px 6px;
 }
 
 .pswp--open {
@@ -4274,16 +4275,16 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 	transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 }
 
-	.spotlight.onscroll-image-fade-right .image img {
-		-moz-transition: opacity 0.75s ease-in-out;
-		-webkit-transition: opacity 0.75s ease-in-out;
-		-ms-transition: opacity 0.75s ease-in-out;
-		transition: opacity 0.75s ease-in-out;
-		-moz-transition-delay: 0.5625s;
-		-webkit-transition-delay: 0.5625s;
-		-ms-transition-delay: 0.5625s;
-		transition-delay: 0.5625s;
-	}
+.spotlight.onscroll-image-fade-right .image img {
+	-moz-transition: opacity 0.75s ease-in-out;
+	-webkit-transition: opacity 0.75s ease-in-out;
+	-ms-transition: opacity 0.75s ease-in-out;
+	transition: opacity 0.75s ease-in-out;
+	-moz-transition-delay: 0.5625s;
+	-webkit-transition-delay: 0.5625s;
+	-ms-transition-delay: 0.5625s;
+	transition-delay: 0.5625s;
+}
 
 .spotlight.onscroll-image-fade-right.is-inactive .image {
 	-moz-transform: translateX(-1rem);
@@ -4387,7 +4388,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 	@media screen and (max-width: 1680px) {
 
 		.spotlight.style1 .content {
-			padding: 5rem 5rem 3rem 5rem ;
+			padding: 3rem 5rem 3rem 5rem ;
 		}
 
 	}
@@ -4395,7 +4396,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 	@media screen and (max-width: 1280px) {
 
 		.spotlight.style1 .content {
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2rem 4rem 2rem 4rem ;
 		}
 
 	}
@@ -4403,7 +4404,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 	@media screen and (max-width: 980px) {
 
 		.spotlight.style1 .content {
-			padding: 3.75rem 3rem 1.75rem 3rem ;
+			padding: 1.75rem 3rem 1.75rem 3rem ;
 			width: 50%;
 			min-width: 0;
 		}
@@ -5850,6 +5851,10 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		}
 	}
 
+	.scroll-down {
+		display: none;
+	}
+
 	.text-center {
 		text-align: center;
 	}
@@ -6045,4 +6050,55 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		.timeline > li > .timeline-panel {
 			width: 46%;
 		}
+
+		.scroll-down {
+			position: absolute;
+			display: block;
+			left: 0;
+			right: 0;
+			bottom: 80px;
+			padding: 20px 0px 50px;
+			opacity: 0.7;
+			background-color: #fff;
+			width: 150px;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 6px;
+		}
+		
+		.scroll-down p {
+			color: #000;
+		}
+		
+		.scroll-down::after{
+			content: '╲╱';
+			color: #000;
+			position: absolute;
+			text-shadow: 0 0 6px rgba(0,0,0,0.5);
+			font-size: 20px;
+			width: 60px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 10px;
+			bottom: 0;
+			left: 50%;
+			margin-left: -30px;
+			animation: bounce 1s ease infinite;
+		}
 	}
+
+.timeline-footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

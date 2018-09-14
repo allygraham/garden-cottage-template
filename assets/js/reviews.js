@@ -76,7 +76,7 @@ var context = {
     {
       title: 'Garden cottage Crail',
       rating: 5,
-      date: 'April 5',
+      date: 'April 2017',
       comment: `The whole package. From booking to information. The house is top class with every facility catered. Great location. 
       We as a family have had a good relaxing break. Great for kids also. Will be back.`,
       name:'Desmond G',
