@@ -3859,6 +3859,11 @@
 	}
 }
 
+.gallery-img {
+	height: 600px;
+	overflow: hidden;
+}
+
 .gallery-img img,
 .cottage-gallery-img img {
 	width: 100%;
