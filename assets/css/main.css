@@ -3879,6 +3879,10 @@
 	margin-top: 50px;
 }
 
+h1.logo > a {
+	border: 0 !important;
+}
+
 #header h1.h1--home {
 	background-color: #FFF;
 	padding: 20px 20px 30px 20px;
