@@ -52,7 +52,11 @@
 			]
 		});
 
-		$('.accommodation-gallery').slick();
+		$('.accommodation-gallery-1').slick();
+		$('.accommodation-gallery-2').slick();
+		$('.accommodation-gallery-3').slick();
+		$('.accommodation-gallery-4').slick();
+		$('.accommodation-gallery-5').slick();
 
 		var	$window = $(window),
 			$body = $('body'),

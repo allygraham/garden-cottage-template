@@ -3807,11 +3807,6 @@
 
 .slick-next,
 .slick-prev {
-	color: #fff !important;
-	background: #669966 !important;
-	border-radius: 50%;
-	width: 50px !important;
-	height: 50px !important;
 	z-index: 5;
 }
 
@@ -4322,10 +4317,6 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 /* Spotlight (style1) */
 
 .spotlight.style1 {
-	-moz-align-items: -moz-stretch;
-	-webkit-align-items: -webkit-stretch;
-	-ms-align-items: -ms-stretch;
-	align-items: stretch;
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -4371,13 +4362,14 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 		-webkit-flex-shrink: 0;
 		-ms-flex-shrink: 0;
 		flex-shrink: 0;
-		width: 35%;
+		width: 43%;
 		min-width: 25rem;
 		border-radius: 0;
-		display: flex;
+		display: block;
 		align-items: center;
 		justify-content: center;
 		position: relative;
+		padding-left: 40px;
 	}
 
 		.spotlight.style1 .image img {
@@ -6107,4 +6099,8 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
   100% {
     transform: translateY(0);
   }
+}
+
+.image-position-center {
+	align-items: center;
 }
