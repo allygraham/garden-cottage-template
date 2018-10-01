@@ -22,6 +22,7 @@
 			slidesToScroll: 1,
 			arrows: false,
 			fade: true,
+			lazyLoad: 'ondemand',
 		});
 		$('.gallery-nav').slick({
 			asNavFor: '.gallery-img',
