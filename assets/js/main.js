@@ -31,7 +31,7 @@
 			slidesToShow: 3,
 			adaptiveHeight: true,
 			autoplay: true,
-			autoplaySpeed: 2000,
+			autoplaySpeed: 3000,
 			responsive: [
 				{
 					breakpoint: 1200,
@@ -40,23 +40,36 @@
 				},
 				{
 					breakpoint: 1024,
-					settings: {
-					}
 				},
 				{
 					breakpoint: 768,
 					settings: {
-						centerPadding: '5px',
+						slidesToShow: 1,
 					}
 				}
 			]
 		});
 
-		$('.accommodation-gallery-1').slick();
-		$('.accommodation-gallery-2').slick();
-		$('.accommodation-gallery-3').slick();
-		$('.accommodation-gallery-4').slick();
-		$('.accommodation-gallery-5').slick();
+		$('.accommodation-gallery-1').slick({
+			centerMode: true,
+			slidesToShow: 1,
+		});
+		$('.accommodation-gallery-2').slick({
+			centerMode: true,
+			slidesToShow: 1,
+		});
+		$('.accommodation-gallery-3').slick({
+			centerMode: true,
+			slidesToShow: 1,
+		});
+		$('.accommodation-gallery-4').slick({
+			centerMode: true,
+			slidesToShow: 1,
+		});
+		$('.accommodation-gallery-5').slick({
+			centerMode: true,
+			slidesToShow: 1,
+		});
 
 		var	$window = $(window),
 			$body = $('body'),
