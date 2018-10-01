@@ -52,43 +52,7 @@
 			]
 		});
 
-		$('.cottage-gallery-img').slick({
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			arrows: false,
-			fade: true,
-		});
-		$('.cottage-gallery-nav').slick({
-			asNavFor: '.cottage-gallery-img',
-			infinite: true,
-			centerMode: true,
-			centerPadding: '20px',
-			focusOnSelect: true,
-			slidesToShow: 3,
-			adaptiveHeight: true,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						centerPadding: '120px',
-					}
-				},
-				{
-					breakpoint: 1024,
-					settings: {
-						centerPadding: '40px',
-					}
-				},
-				{
-					breakpoint: 768,
-					settings: {
-						centerPadding: '5px',
-					}
-				}
-			]
-		});
+		$('.accommodation-gallery').slick();
 
 		var	$window = $(window),
 			$body = $('body'),
