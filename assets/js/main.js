@@ -1,6 +1,6 @@
 (function($) {
 
-	var folder = "assets/images/accommodation/";
+	var folder = "/assets/images/accommodation/";
 	var houseAreas = ['living-area', 'family-bedroom', 'twin-bedroom', 'master-bedroom', 'garden']
 
 	houseAreas.map(
