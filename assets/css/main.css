@@ -3810,11 +3810,6 @@
 	z-index: 5;
 }
 
-.slick-prev:before,
-.slick-next:before {
-	color: #FFF !important;
-}
-
 .margin-t-2 {
 	margin-top: 2em;
 }
@@ -6102,4 +6097,12 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 .image-position-center {
 	align-items: center;
+}
+
+.slick-slide {
+	opacity: 0.25;
+}
+
+.slick-slide.slick-active {
+	opacity: 1;
 }
