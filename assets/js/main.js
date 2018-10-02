@@ -1,5 +1,23 @@
 (function($) {
 
+	var folder = "images/accommodation/";
+	var houseAreas = ['living-area', 'family-bedroom', 'twin-bedroom', 'master-bedroom', 'garden']
+
+	houseAreas.map(
+		houseArea => {
+			const url = folder+houseArea+"/";
+		$.ajax({
+			url : url,
+			success: function (data) {
+					$(data).find("a").attr("href", function (i, val) {
+							if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+									$(".accommodation-gallery ."+houseArea).append( "<div><img src='"+ url + val +"'></div>" );
+							} 
+					});
+			}
+		})
+	});
+
 	skel.breakpoints({
 		wide: '(max-width: 1680px)',
 		normal: '(max-width: 1280px)',
@@ -51,23 +69,7 @@
 			]
 		});
 
-		$('.accommodation-gallery-1').slick({
-			centerMode: true,
-			slidesToShow: 1,
-		});
-		$('.accommodation-gallery-2').slick({
-			centerMode: true,
-			slidesToShow: 1,
-		});
-		$('.accommodation-gallery-3').slick({
-			centerMode: true,
-			slidesToShow: 1,
-		});
-		$('.accommodation-gallery-4').slick({
-			centerMode: true,
-			slidesToShow: 1,
-		});
-		$('.accommodation-gallery-5').slick({
+		$('.accommodation-gallery').slick({
 			centerMode: true,
 			slidesToShow: 1,
 		});
